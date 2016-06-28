@@ -1,0 +1,28 @@
+4.4.0
+=====
+- Add support for the latest GNU autotools (Bug #2755).
+- Make sure xgettext uses UTF-8 encoding for source files.
+
+4.3.99.2
+========
+- No changes for Xfce 4.4.0 RC2.
+
+4.3.99.1
+========
+- GCC specific compiler flags will not be used unless the compiler supports it.
+
+4.3.90.2
+========
+- Add GPL boilerplate to the installed scripts and macros.
+
+4.3.90.1
+========
+- G_DISABLE_DEPRECATED is no longer automatically added to CFLAGS in
+  XDT_FEATURE_DEBUG().
+- The version number is displayed properly now when a required package is
+  not found in XDT_CHECK_PACKAGE().
+
+4.3.0
+=====
+- xfce4-dev-tools is a new module in SVN, which includes tools, macros and
+  documentation for Xfce developers.
