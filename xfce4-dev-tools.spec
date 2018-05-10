@@ -4,7 +4,7 @@
 #
 Name     : xfce4-dev-tools
 Version  : 4.4.0
-Release  : 3
+Release  : 4
 URL      : http://users.xfce.org/~benny/files/xfce4-dev-tools/4.4/xfce4-dev-tools-4.4.0.tar.gz
 Source0  : http://users.xfce.org/~benny/files/xfce4-dev-tools/4.4/xfce4-dev-tools-4.4.0.tar.gz
 Summary  : No detailed summary available
