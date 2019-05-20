@@ -4,10 +4,10 @@
 #
 Name     : xfce4-dev-tools
 Version  : 4.12.0
-Release  : 6
+Release  : 7
 URL      : http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.12/xfce4-dev-tools-4.12.0.tar.bz2
 Source0  : http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.12/xfce4-dev-tools-4.12.0.tar.bz2
-Summary  : No detailed summary available
+Summary  : Xfce developer tools
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: xfce4-dev-tools-bin = %{version}-%{release}
@@ -56,7 +56,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1542220210
+export SOURCE_DATE_EPOCH=1558341668
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -68,7 +75,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1542220210
+export SOURCE_DATE_EPOCH=1558341668
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/xfce4-dev-tools
 cp COPYING %{buildroot}/usr/share/package-licenses/xfce4-dev-tools/COPYING
