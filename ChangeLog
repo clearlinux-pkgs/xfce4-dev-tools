@@ -1,3 +1,15 @@
+commit 3a7475960ac2d1eb990933ca5dfee6d4bf0069c9
+Author: Romain Bouvier <skunnyk@alteroot.org>
+Date:   Sun Aug 11 17:43:26 2019 +0200
+
+    Bump to 4.14.0
+
+commit 2e9291813e5afbe80d4de566b61ab879e96e1283
+Author: Romain Bouvier <skunnyk@alteroot.org>
+Date:   Thu Jun 27 14:56:38 2019 +0200
+
+    Back to development
+
 commit c5fd93be2c853f0a47ab69b313edb03e12077ef5
 Author: Romain Bouvier <skunnyk@alteroot.org>
 Date:   Thu Jun 27 14:48:28 2019 +0200
